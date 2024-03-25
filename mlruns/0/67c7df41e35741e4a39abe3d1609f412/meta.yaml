@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/67c7df41e35741e4a39abe3d1609f412/artifacts
+end_time: 1711217178085
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 67c7df41e35741e4a39abe3d1609f412
+run_name: salty-hawk-555
+run_uuid: 67c7df41e35741e4a39abe3d1609f412
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711217173274
+status: 4
+tags: []
+user_id: rowanzinn

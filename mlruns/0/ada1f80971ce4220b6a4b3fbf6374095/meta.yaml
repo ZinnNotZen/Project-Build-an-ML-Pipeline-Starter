@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/ada1f80971ce4220b6a4b3fbf6374095/artifacts
+end_time: 1711212242628
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ada1f80971ce4220b6a4b3fbf6374095
+run_name: skittish-snail-360
+run_uuid: ada1f80971ce4220b6a4b3fbf6374095
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711212240063
+status: 4
+tags: []
+user_id: rowanzinn

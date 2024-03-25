@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/17bbcd82f51f45dbb1b433f77f8021da/artifacts
+end_time: 1711211777407
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 17bbcd82f51f45dbb1b433f77f8021da
+run_name: treasured-koi-737
+run_uuid: 17bbcd82f51f45dbb1b433f77f8021da
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711211775465
+status: 4
+tags: []
+user_id: rowanzinn

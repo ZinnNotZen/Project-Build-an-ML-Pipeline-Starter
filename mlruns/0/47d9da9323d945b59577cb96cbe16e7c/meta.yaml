@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/47d9da9323d945b59577cb96cbe16e7c/artifacts
+end_time: 1711212545552
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 47d9da9323d945b59577cb96cbe16e7c
+run_name: traveling-crab-565
+run_uuid: 47d9da9323d945b59577cb96cbe16e7c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711212543234
+status: 4
+tags: []
+user_id: rowanzinn

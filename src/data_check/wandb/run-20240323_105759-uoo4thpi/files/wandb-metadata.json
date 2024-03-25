@@ -1,0 +1,54 @@
+{
+    "os": "macOS-14.4-x86_64-i386-64bit",
+    "python": "3.9.19",
+    "heartbeatAt": "2024-03-23T16:58:02.007899",
+    "startedAt": "2024-03-23T16:57:59.391797",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        ".",
+        "-vv",
+        "--csv",
+        "clean_sample.csv:latest",
+        "--ref",
+        "clean_sample.csv:reference",
+        "--kl_threshold",
+        "0.2",
+        "--min_price",
+        "10",
+        "--max_price",
+        "350"
+    ],
+    "state": "running",
+    "program": "/opt/anaconda3/envs/mlflow-af6473294b18f57ea960125076520147a7a4be59/bin/pytest",
+    "git": {
+        "remote": "https://github.com/ZinnNotZen/Project-Build-an-ML-Pipeline-Starter",
+        "commit": "f9f862cdc17252630ad30ffb176a25ae26f1bcc0"
+    },
+    "email": "rowanzinn@gmail.com",
+    "root": "/Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter",
+    "host": "rowans-mbp.lan",
+    "username": "rowanzinn",
+    "executable": "/opt/anaconda3/envs/mlflow-af6473294b18f57ea960125076520147a7a4be59/bin/python",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 2400,
+        "min": 2400,
+        "max": 2400
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2400,
+            "min": 2400,
+            "max": 2400
+        }
+    ],
+    "disk": {
+        "total": 465.62699127197266,
+        "used": 9.53731918334961
+    },
+    "memory": {
+        "total": 8.0
+    }
+}

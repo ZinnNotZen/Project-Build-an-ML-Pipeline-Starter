@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/fabf59eb4bac4ecebdcc547f3bdeaf3f/artifacts
+end_time: 1711212697568
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: fabf59eb4bac4ecebdcc547f3bdeaf3f
+run_name: clean-shrimp-280
+run_uuid: fabf59eb4bac4ecebdcc547f3bdeaf3f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711212675617
+status: 3
+tags: []
+user_id: rowanzinn

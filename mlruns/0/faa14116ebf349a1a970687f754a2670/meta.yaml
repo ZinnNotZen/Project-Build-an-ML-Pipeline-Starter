@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/faa14116ebf349a1a970687f754a2670/artifacts
+end_time: 1711214349740
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: faa14116ebf349a1a970687f754a2670
+run_name: clean-worm-901
+run_uuid: faa14116ebf349a1a970687f754a2670
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711214333830
+status: 4
+tags: []
+user_id: rowanzinn

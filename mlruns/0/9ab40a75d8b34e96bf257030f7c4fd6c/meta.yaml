@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/9ab40a75d8b34e96bf257030f7c4fd6c/artifacts
+end_time: 1711216236930
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9ab40a75d8b34e96bf257030f7c4fd6c
+run_name: resilient-hound-891
+run_uuid: 9ab40a75d8b34e96bf257030f7c4fd6c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711216229687
+status: 4
+tags: []
+user_id: rowanzinn

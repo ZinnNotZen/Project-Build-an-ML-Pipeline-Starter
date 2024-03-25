@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/e46953d27d7748129b21034bedd6c5b3/artifacts
+end_time: 1711210272225
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e46953d27d7748129b21034bedd6c5b3
+run_name: gifted-kit-910
+run_uuid: e46953d27d7748129b21034bedd6c5b3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711210270643
+status: 4
+tags: []
+user_id: rowanzinn

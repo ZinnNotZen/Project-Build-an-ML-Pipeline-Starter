@@ -1,0 +1,41 @@
+{
+    "os": "macOS-14.4-x86_64-i386-64bit",
+    "python": "3.9.15",
+    "heartbeatAt": "2024-03-23T16:29:44.199200",
+    "startedAt": "2024-03-23T16:29:43.171040",
+    "docker": null,
+    "cuda": null,
+    "args": null,
+    "state": "running",
+    "program": "src/eda/eda.ipynb",
+    "root": "/Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter",
+    "git": {
+        "remote": "https://github.com/ZinnNotZen/Project-Build-an-ML-Pipeline-Starter",
+        "commit": "f9f862cdc17252630ad30ffb176a25ae26f1bcc0"
+    },
+    "email": "rowanzinn@gmail.com",
+    "host": "rowans-mbp.lan",
+    "username": "rowanzinn",
+    "executable": "/opt/anaconda3/envs/nyc_airbnb_dev/bin/python",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 2400,
+        "min": 2400,
+        "max": 2400
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2400,
+            "min": 2400,
+            "max": 2400
+        }
+    ],
+    "disk": {
+        "total": 465.62699127197266,
+        "used": 160.72897338867188
+    },
+    "memory": {
+        "total": 8.0
+    }
+}

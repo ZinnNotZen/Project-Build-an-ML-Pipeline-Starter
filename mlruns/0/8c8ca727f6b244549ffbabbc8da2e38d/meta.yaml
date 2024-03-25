@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/8c8ca727f6b244549ffbabbc8da2e38d/artifacts
+end_time: 1711157449202
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8c8ca727f6b244549ffbabbc8da2e38d
+run_name: upset-hound-731
+run_uuid: 8c8ca727f6b244549ffbabbc8da2e38d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711157444309
+status: 4
+tags: []
+user_id: rowanzinn

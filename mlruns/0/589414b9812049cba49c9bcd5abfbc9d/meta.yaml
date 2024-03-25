@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/589414b9812049cba49c9bcd5abfbc9d/artifacts
+end_time: 1711212697343
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 589414b9812049cba49c9bcd5abfbc9d
+run_name: melodic-shad-49
+run_uuid: 589414b9812049cba49c9bcd5abfbc9d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711212678909
+status: 3
+tags: []
+user_id: rowanzinn

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/eeb6fb562b46432bb31763da305683f9/artifacts
+end_time: 1711211986054
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: eeb6fb562b46432bb31763da305683f9
+run_name: amusing-grouse-765
+run_uuid: eeb6fb562b46432bb31763da305683f9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711211915247
+status: 4
+tags: []
+user_id: rowanzinn

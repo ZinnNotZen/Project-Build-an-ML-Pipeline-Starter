@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/d1155eafa02f41d5bfffa08aea687456/artifacts
+end_time: 1711214242783
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d1155eafa02f41d5bfffa08aea687456
+run_name: victorious-wren-454
+run_uuid: d1155eafa02f41d5bfffa08aea687456
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711214116708
+status: 4
+tags: []
+user_id: rowanzinn
