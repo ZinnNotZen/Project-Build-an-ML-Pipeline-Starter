@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/21fcdd5c7cb345dd83efd5a7f7dd9b7c/artifacts
+end_time: 1711494934091
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 21fcdd5c7cb345dd83efd5a7f7dd9b7c
+run_name: dazzling-duck-461
+run_uuid: 21fcdd5c7cb345dd83efd5a7f7dd9b7c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711494931450
+status: 4
+tags: []
+user_id: rowanzinn

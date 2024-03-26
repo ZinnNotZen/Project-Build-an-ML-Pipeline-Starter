@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/921a36c7a66d4813bcd48ae297b84a86/artifacts
+end_time: 1711495101647
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 921a36c7a66d4813bcd48ae297b84a86
+run_name: rumbling-lark-459
+run_uuid: 921a36c7a66d4813bcd48ae297b84a86
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711495095647
+status: 4
+tags: []
+user_id: rowanzinn

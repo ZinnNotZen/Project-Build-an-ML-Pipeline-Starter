@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/76b63343d20f49ca8727471b66deddfd/artifacts
+end_time: 1711492627547
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 76b63343d20f49ca8727471b66deddfd
+run_name: rebellious-wren-806
+run_uuid: 76b63343d20f49ca8727471b66deddfd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711492624337
+status: 4
+tags: []
+user_id: rowanzinn
