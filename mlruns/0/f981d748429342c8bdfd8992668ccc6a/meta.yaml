@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/f981d748429342c8bdfd8992668ccc6a/artifacts
+end_time: 1711491359859
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f981d748429342c8bdfd8992668ccc6a
+run_name: resilient-moth-189
+run_uuid: f981d748429342c8bdfd8992668ccc6a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711491345716
+status: 4
+tags: []
+user_id: rowanzinn

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/fbe69da4a86f4216a0d8341befc5f1b3/artifacts
+end_time: 1711380975917
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: fbe69da4a86f4216a0d8341befc5f1b3
+run_name: painted-crab-194
+run_uuid: fbe69da4a86f4216a0d8341befc5f1b3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711380969283
+status: 3
+tags: []
+user_id: rowanzinn

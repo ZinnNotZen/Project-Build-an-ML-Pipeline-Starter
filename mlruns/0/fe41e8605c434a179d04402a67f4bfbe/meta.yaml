@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/fe41e8605c434a179d04402a67f4bfbe/artifacts
+end_time: 1711492294445
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: fe41e8605c434a179d04402a67f4bfbe
+run_name: gaudy-koi-484
+run_uuid: fe41e8605c434a179d04402a67f4bfbe
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711492287846
+status: 4
+tags: []
+user_id: rowanzinn

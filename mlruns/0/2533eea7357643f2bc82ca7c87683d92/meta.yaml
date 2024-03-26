@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/2533eea7357643f2bc82ca7c87683d92/artifacts
+end_time: 1711491104985
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 2533eea7357643f2bc82ca7c87683d92
+run_name: dashing-crow-719
+run_uuid: 2533eea7357643f2bc82ca7c87683d92
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711491099108
+status: 4
+tags: []
+user_id: rowanzinn

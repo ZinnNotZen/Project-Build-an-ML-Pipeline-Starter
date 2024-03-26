@@ -65,16 +65,18 @@ def go(config: DictConfig):
 
         if "data_check" in active_steps:
             _ = mlflow.run(
-                os.path.join(hydra.utils.get_original_cwd(), "src", "data_check"),
-                "main",
-                parameters={
-                    "csv": "clean_sample.csv:latest",
-                    "ref": "clean_sample.csv:reference",
-                    "kl_threshold": config["data_check"]["kl_threshold"],
-                    "min_price": config['etl']['min_price'],
-                    "max_price": config['etl']['max_price']
-                }
-            )
+                    os.path.join(hydra.utils.get_original_cwd(), "src", "train_random_forest"),
+                    "main",
+                    parameters={
+                        "trainval_artifact": "trainval_data.csv:latest",  # Assuming trainval_data.csv is the artifact name
+                        "val_size": config["train_random_forest"]["val_size"],
+                        "random_seed": config["train_random_forest"]["random_seed"],
+                        "stratify_by": config["train_random_forest"]["stratify_by"],
+                        "rf_config": rf_config_path,  # Path to the serialized random forest configuration
+                        "max_tfidf_features": config["train_random_forest"]["max_tfidf_features"],
+                        "output_artifact": "trained_model:latest"  # Name of the output artifact for the trained model
+                    }
+                )
 
         if "data_split" in active_steps:
              _ = mlflow.run(
@@ -95,7 +97,20 @@ def go(config: DictConfig):
                 json.dump(dict(config["modeling"]["random_forest"].items()), fp)  # DO NOT TOUCH
 
             # Use trainval_data.csv:latest as trainval_artifact
-            trainval_artifact = "trainval_data.csv:latest"
+            
+            _ = mlflow.run(
+                os.path.join(hydra.utils.get_original_cwd(), "src", "rain_random_forest"),
+                "main",
+                parameters={
+                    "trainval_artifact": "trainval_data.csv:latest",
+                    "val_size": config["modeling"]["val_size"],
+                    "random_seed": config["modeling"]["random_seed"],
+                    "stratify_by": config["modeling"]["stratify_by"],
+                    "rf_config": rf_config,
+                    "max_tfidf_features": config["modeling"]["max_tfidf_features"],
+                    "output_artifact": "random_forest_export"
+                }
+            )
 
             # Add train_random_forest step
             train_rf_cmd = f"python src/train_random_forest/run.py --trainval_artifact {trainval_artifact} --val_size {config['modeling']['val_size']} --stratify_by {config['modeling']['stratify_by']} --rf_config {rf_config_path} --max_tfidf_features {config['modeling']['max_tfidf_features']} --output_artifact random_forest_export"
