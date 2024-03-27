@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/558255b8cde2468bb5f808d16a5d286d/artifacts
+end_time: 1711504161876
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 558255b8cde2468bb5f808d16a5d286d
+run_name: zealous-bee-127
+run_uuid: 558255b8cde2468bb5f808d16a5d286d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711504086118
+status: 3
+tags: []
+user_id: rowanzinn

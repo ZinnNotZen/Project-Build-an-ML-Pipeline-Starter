@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/9e827f28dcd440e08fdea456477d96fb/artifacts
+end_time: 1711504327606
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9e827f28dcd440e08fdea456477d96fb
+run_name: dapper-pig-170
+run_uuid: 9e827f28dcd440e08fdea456477d96fb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711504263931
+status: 3
+tags: []
+user_id: rowanzinn

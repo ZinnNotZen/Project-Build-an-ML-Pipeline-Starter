@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/6857e580205e4c5dab0d29b4ce1e934d/artifacts
+end_time: 1711504869646
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 6857e580205e4c5dab0d29b4ce1e934d
+run_name: calm-pig-659
+run_uuid: 6857e580205e4c5dab0d29b4ce1e934d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711504750629
+status: 3
+tags: []
+user_id: rowanzinn

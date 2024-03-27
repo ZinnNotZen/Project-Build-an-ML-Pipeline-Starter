@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/c8f01103977940e9b4d4d643a8f70512/artifacts
+end_time: 1711504869971
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c8f01103977940e9b4d4d643a8f70512
+run_name: entertaining-yak-598
+run_uuid: c8f01103977940e9b4d4d643a8f70512
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711504744451
+status: 3
+tags: []
+user_id: rowanzinn
