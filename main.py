@@ -69,7 +69,7 @@ def go(config: DictConfig):
                     "main",
                     parameters={
                         "trainval_artifact": "trainval_data.csv:latest",  # Assuming trainval_data.csv is the artifact name
-                        "val_size": config["train_random_forest"]["val_size"],
+                        "val_size": config["modeling"]["val_size"],
                         "random_seed": config["train_random_forest"]["random_seed"],
                         "stratify_by": config["train_random_forest"]["stratify_by"],
                         "rf_config": rf_config_path,  # Path to the serialized random forest configuration

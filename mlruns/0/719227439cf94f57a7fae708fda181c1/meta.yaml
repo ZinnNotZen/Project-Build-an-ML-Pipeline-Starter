@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/719227439cf94f57a7fae708fda181c1/artifacts
+end_time: 1711578345049
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 719227439cf94f57a7fae708fda181c1
+run_name: classy-newt-640
+run_uuid: 719227439cf94f57a7fae708fda181c1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711578310698
+status: 4
+tags: []
+user_id: rowanzinn

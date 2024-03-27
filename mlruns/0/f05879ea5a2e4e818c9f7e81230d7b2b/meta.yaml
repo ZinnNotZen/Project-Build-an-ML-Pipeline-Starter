@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/f05879ea5a2e4e818c9f7e81230d7b2b/artifacts
+end_time: 1711578226787
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f05879ea5a2e4e818c9f7e81230d7b2b
+run_name: spiffy-crab-802
+run_uuid: f05879ea5a2e4e818c9f7e81230d7b2b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711578182248
+status: 4
+tags: []
+user_id: rowanzinn

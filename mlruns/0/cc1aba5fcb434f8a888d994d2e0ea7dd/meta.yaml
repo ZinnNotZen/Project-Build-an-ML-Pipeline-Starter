@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/cc1aba5fcb434f8a888d994d2e0ea7dd/artifacts
+end_time: 1711579313291
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: cc1aba5fcb434f8a888d994d2e0ea7dd
+run_name: beautiful-steed-923
+run_uuid: cc1aba5fcb434f8a888d994d2e0ea7dd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711579298164
+status: 3
+tags: []
+user_id: rowanzinn

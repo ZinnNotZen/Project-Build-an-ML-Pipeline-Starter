@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/fb73ca8c70c6466a9711d39f6473166b/artifacts
+end_time: 1711506240858
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: fb73ca8c70c6466a9711d39f6473166b
+run_name: gifted-yak-765
+run_uuid: fb73ca8c70c6466a9711d39f6473166b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711506226576
+status: 3
+tags: []
+user_id: rowanzinn

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/8dbd1698f4194fe4a93419e1b4820c05/artifacts
+end_time: 1711580557710
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8dbd1698f4194fe4a93419e1b4820c05
+run_name: caring-shad-82
+run_uuid: 8dbd1698f4194fe4a93419e1b4820c05
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711580524162
+status: 4
+tags: []
+user_id: rowanzinn

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/4e69b3dc084d4e6fbd6477e460913ec1/artifacts
+end_time: 1711578211072
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4e69b3dc084d4e6fbd6477e460913ec1
+run_name: flawless-goat-991
+run_uuid: 4e69b3dc084d4e6fbd6477e460913ec1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711578193177
+status: 3
+tags: []
+user_id: rowanzinn

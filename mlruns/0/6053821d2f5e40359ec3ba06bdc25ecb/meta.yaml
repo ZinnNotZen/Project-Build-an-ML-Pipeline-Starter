@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/6053821d2f5e40359ec3ba06bdc25ecb/artifacts
+end_time: 1711580428412
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 6053821d2f5e40359ec3ba06bdc25ecb
+run_name: redolent-koi-145
+run_uuid: 6053821d2f5e40359ec3ba06bdc25ecb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711580410427
+status: 3
+tags: []
+user_id: rowanzinn

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/da521a8b44a34660845fce447cc54869/artifacts
+end_time: 1711578840392
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: da521a8b44a34660845fce447cc54869
+run_name: glamorous-dove-304
+run_uuid: da521a8b44a34660845fce447cc54869
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711578824760
+status: 3
+tags: []
+user_id: rowanzinn

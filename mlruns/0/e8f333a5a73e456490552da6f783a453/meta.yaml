@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/e8f333a5a73e456490552da6f783a453/artifacts
+end_time: 1711581239633
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e8f333a5a73e456490552da6f783a453
+run_name: unleashed-worm-621
+run_uuid: e8f333a5a73e456490552da6f783a453
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711581202904
+status: 4
+tags: []
+user_id: rowanzinn

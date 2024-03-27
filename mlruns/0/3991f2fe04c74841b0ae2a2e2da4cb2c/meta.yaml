@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/3991f2fe04c74841b0ae2a2e2da4cb2c/artifacts
+end_time: 1711582755512
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3991f2fe04c74841b0ae2a2e2da4cb2c
+run_name: polite-gnu-864
+run_uuid: 3991f2fe04c74841b0ae2a2e2da4cb2c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711582738809
+status: 3
+tags: []
+user_id: rowanzinn
