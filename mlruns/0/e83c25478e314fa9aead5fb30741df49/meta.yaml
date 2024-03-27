@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/e83c25478e314fa9aead5fb30741df49/artifacts
+end_time: 1711503589823
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e83c25478e314fa9aead5fb30741df49
+run_name: fun-bear-428
+run_uuid: e83c25478e314fa9aead5fb30741df49
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711503582572
+status: 3
+tags: []
+user_id: rowanzinn

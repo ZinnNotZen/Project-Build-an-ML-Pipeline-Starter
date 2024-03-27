@@ -91,25 +91,28 @@ def go(config: DictConfig):
             )
 
         if "train_random_forest" in active_steps:
-            # NOTE: we need to serialize the random forest configuration into JSON
+            # Serialize the random forest configuration into JSON
             rf_config_path = os.path.abspath("rf_config.json")
             with open(rf_config_path, "w+") as fp:
-                json.dump(dict(config["modeling"]["random_forest"].items()), fp)  # DO NOT TOUCH
-
-            # Use trainval_data.csv:latest as trainval_artifact
-            _ = mlflow.run(
-                os.path.join(hydra.utils.get_original_cwd(), "src", "train_random_forest"),
-                "main",
-                parameters={
-                    "trainval_artifact": "trainval_data.csv:latest",
-                    "val_size": config["modeling"]["val_size"],
-                    "random_seed": config["modeling"]["random_seed"],
-                    "stratify_by": config["modeling"]["stratify_by"],
-                    "rf_config": rf_config,
-                    "max_tfidf_features": config["modeling"]["max_tfidf_features"],
-                    "output_artifact": "random_forest_export"
-                }
+                json.dump(dict(config["modeling"]["random_forest"].items()), fp)
+        
+            # Define trainval_artifact
+            trainval_artifact = "trainval_data.csv:latest"
+        
+            # Construct the command for training random forest
+            train_rf_cmd = (
+                f"python src/train_random_forest/run.py "
+                f"--trainval_artifact {trainval_artifact} "
+                f"--val_size {config['modeling']['val_size']} "
+                f"--random_seed {config['modeling']['random_seed']} "
+                f"--stratify_by {config['modeling']['stratify_by']} "
+                f"--rf_config {rf_config_path} "
+                f"--max_tfidf_features {config['modeling']['max_tfidf_features']} "
+                f"--output_artifact random_forest_export"
             )
+        
+            # Execute the command
+            os.system(train_rf_cmd)
 
 
         if "test_regression_model" in active_steps:
