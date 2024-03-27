@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/d2aac563ebdd405383b645f732eaa04d/artifacts
+end_time: 1711506075778
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d2aac563ebdd405383b645f732eaa04d
+run_name: clumsy-bee-653
+run_uuid: d2aac563ebdd405383b645f732eaa04d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711506014970
+status: 4
+tags: []
+user_id: rowanzinn

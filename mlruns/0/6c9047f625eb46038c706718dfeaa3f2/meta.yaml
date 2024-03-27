@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/6c9047f625eb46038c706718dfeaa3f2/artifacts
+end_time: 1711506075376
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 6c9047f625eb46038c706718dfeaa3f2
+run_name: amusing-snail-485
+run_uuid: 6c9047f625eb46038c706718dfeaa3f2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711506053125
+status: 3
+tags: []
+user_id: rowanzinn

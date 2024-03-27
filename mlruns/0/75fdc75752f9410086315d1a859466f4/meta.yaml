@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/75fdc75752f9410086315d1a859466f4/artifacts
+end_time: 1711506053073
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 75fdc75752f9410086315d1a859466f4
+run_name: resilient-wren-51
+run_uuid: 75fdc75752f9410086315d1a859466f4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711506026474
+status: 3
+tags: []
+user_id: rowanzinn
