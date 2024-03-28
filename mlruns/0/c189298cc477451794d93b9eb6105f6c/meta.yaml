@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/c189298cc477451794d93b9eb6105f6c/artifacts
+end_time: 1711662669947
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c189298cc477451794d93b9eb6105f6c
+run_name: clumsy-goose-482
+run_uuid: c189298cc477451794d93b9eb6105f6c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711662656098
+status: 3
+tags: []
+user_id: rowanzinn

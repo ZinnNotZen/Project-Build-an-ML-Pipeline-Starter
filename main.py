@@ -72,7 +72,7 @@ def go(config: DictConfig):
                         "val_size": config["modeling"]["val_size"],
                         "random_seed": config["modeling"]["random_seed"],
                         "stratify_by": config["modeling"]["stratify_by"],
-                        "rf_config": rf_config,  # Path to the serialized random forest configuration
+                        #"rf_config": rf_config,  # Path to the serialized random forest configuration
                         "max_tfidf_features": config["modeling"]["max_tfidf_features"],
                         "output_artifact": "trained_model:latest"  # Name of the output artifact for the trained model
                     }

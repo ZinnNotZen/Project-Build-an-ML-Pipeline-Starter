@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/817169fda6e548e68c7dfe69ad489ef5/artifacts
+end_time: 1711663275874
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 817169fda6e548e68c7dfe69ad489ef5
+run_name: adorable-hare-460
+run_uuid: 817169fda6e548e68c7dfe69ad489ef5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711663238438
+status: 4
+tags: []
+user_id: rowanzinn
