@@ -65,15 +65,15 @@ def go(config: DictConfig):
 
         if "data_check" in active_steps:
             _ = mlflow.run(
-                    os.path.join(hydra.utils.get_original_cwd(), "src", "train_random_forest"),
+                    os.path.join(hydra.utils.get_original_cwd(), "src", "modeling"),
                     "main",
                     parameters={
                         "trainval_artifact": "trainval_data.csv:latest",  # Assuming trainval_data.csv is the artifact name
                         "val_size": config["modeling"]["val_size"],
-                        "random_seed": config["train_random_forest"]["random_seed"],
-                        "stratify_by": config["train_random_forest"]["stratify_by"],
+                        "random_seed": config["modeling"]["random_seed"],
+                        "stratify_by": config["modeling"]["stratify_by"],
                         "rf_config": rf_config_path,  # Path to the serialized random forest configuration
-                        "max_tfidf_features": config["train_random_forest"]["max_tfidf_features"],
+                        "max_tfidf_features": config["modeling"]["max_tfidf_features"],
                         "output_artifact": "trained_model:latest"  # Name of the output artifact for the trained model
                     }
                 )
@@ -98,7 +98,7 @@ def go(config: DictConfig):
 
             # Use trainval_data.csv:latest as trainval_artifact
             _ = mlflow.run(
-                os.path.join(hydra.utils.get_original_cwd(), "src", "train_random_forest"),
+                os.path.join(hydra.utils.get_original_cwd(), "src", "modeling"),
                 "main",
                 parameters={
                     "trainval_artifact": "trainval_data.csv:latest",

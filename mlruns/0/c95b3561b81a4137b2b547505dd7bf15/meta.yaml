@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/c95b3561b81a4137b2b547505dd7bf15/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c95b3561b81a4137b2b547505dd7bf15
+run_name: valuable-frog-896
+run_uuid: c95b3561b81a4137b2b547505dd7bf15
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711661643897
+status: 1
+tags: []
+user_id: rowanzinn
