@@ -65,7 +65,7 @@ def go(config: DictConfig):
 
         if "data_check" in active_steps:
             _ = mlflow.run(
-                    os.path.join(hydra.utils.get_original_cwd(), "src", "modeling"),
+                    os.path.join(hydra.utils.get_original_cwd(), "src", "data_check"),
                     "main",
                     parameters={
                         "trainval_artifact": "trainval_data.csv:latest",  # Assuming trainval_data.csv is the artifact name

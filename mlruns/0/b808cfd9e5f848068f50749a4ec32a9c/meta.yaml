@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/b808cfd9e5f848068f50749a4ec32a9c/artifacts
+end_time: 1711674941578
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b808cfd9e5f848068f50749a4ec32a9c
+run_name: thoughtful-quail-651
+run_uuid: b808cfd9e5f848068f50749a4ec32a9c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711674882368
+status: 4
+tags: []
+user_id: rowanzinn

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/4be68006fb2d4876b344a28e3be348f5/artifacts
+end_time: 1711674941118
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4be68006fb2d4876b344a28e3be348f5
+run_name: persistent-roo-173
+run_uuid: 4be68006fb2d4876b344a28e3be348f5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711674920004
+status: 3
+tags: []
+user_id: rowanzinn
