@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/c549a0397d094da39606bee3975e84f8/artifacts
+end_time: 1712031401303
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c549a0397d094da39606bee3975e84f8
+run_name: awesome-moth-678
+run_uuid: c549a0397d094da39606bee3975e84f8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1712031358291
+status: 4
+tags: []
+user_id: rowanzinn

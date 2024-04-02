@@ -67,13 +67,11 @@ def go(config: DictConfig):
                     os.path.join(hydra.utils.get_original_cwd(), "src", "data_check"),
                     "main",
                     parameters={
-                        "trainval_artifact": "trainval_data.csv:latest",  # Assuming trainval_data.csv is the artifact name
-                        "val_size": config["modeling"]["val_size"],
-                        "random_seed": config["modeling"]["random_seed"],
-                        "stratify_by": config["modeling"]["stratify_by"],
-                        #"rf_config": rf_config,  # Path to the serialized random forest configuration
-                        "max_tfidf_features": config["modeling"]["max_tfidf_features"],
-                        "output_artifact": "trained_model:latest"  # Name of the output artifact for the trained model
+                        "csv": "clean_sample.csv:latest", 
+                        "ref": "clean_sample.csv:reference"
+                        "kl_threshold": config["data_check"]["kl_threshold"],
+                        "min_price": config["etl"]["min_price"],
+                        "max_price": config["etl"]["max_price"],
                     }
                 )
 

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/ec58badb113144069c0b822e426b1c70/artifacts
+end_time: 1712031400833
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ec58badb113144069c0b822e426b1c70
+run_name: incongruous-ape-438
+run_uuid: ec58badb113144069c0b822e426b1c70
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1712031385802
+status: 3
+tags: []
+user_id: rowanzinn
