@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/bfea55840f2f4aa1b72b6eab4748a699/artifacts
+end_time: 1712029494614
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: bfea55840f2f4aa1b72b6eab4748a699
+run_name: intrigued-pig-217
+run_uuid: bfea55840f2f4aa1b72b6eab4748a699
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1712029480094
+status: 3
+tags: []
+user_id: rowanzinn

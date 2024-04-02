@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/daee17625713467f8e09737af0bd09d8/artifacts
+end_time: 1712028842533
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: daee17625713467f8e09737af0bd09d8
+run_name: rebellious-kite-675
+run_uuid: daee17625713467f8e09737af0bd09d8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1712028825938
+status: 3
+tags: []
+user_id: rowanzinn

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/2a7e07cd50864bd8aa06edb774df91c0/artifacts
+end_time: 1712029870438
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 2a7e07cd50864bd8aa06edb774df91c0
+run_name: gifted-rook-629
+run_uuid: 2a7e07cd50864bd8aa06edb774df91c0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1712029855485
+status: 3
+tags: []
+user_id: rowanzinn
