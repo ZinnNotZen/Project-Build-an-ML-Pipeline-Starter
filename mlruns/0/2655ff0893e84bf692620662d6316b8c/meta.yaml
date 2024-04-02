@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/2655ff0893e84bf692620662d6316b8c/artifacts
+end_time: 1711675558985
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 2655ff0893e84bf692620662d6316b8c
+run_name: bedecked-shrew-182
+run_uuid: 2655ff0893e84bf692620662d6316b8c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711675535497
+status: 3
+tags: []
+user_id: rowanzinn

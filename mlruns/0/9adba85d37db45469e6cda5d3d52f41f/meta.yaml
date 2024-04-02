@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/9adba85d37db45469e6cda5d3d52f41f/artifacts
+end_time: 1711937756680
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9adba85d37db45469e6cda5d3d52f41f
+run_name: kindly-shrike-338
+run_uuid: 9adba85d37db45469e6cda5d3d52f41f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711937739894
+status: 3
+tags: []
+user_id: rowanzinn

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/8669b76444064d948074179b1f268396/artifacts
+end_time: 1711675789887
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8669b76444064d948074179b1f268396
+run_name: likeable-gnu-250
+run_uuid: 8669b76444064d948074179b1f268396
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711675750017
+status: 4
+tags: []
+user_id: rowanzinn

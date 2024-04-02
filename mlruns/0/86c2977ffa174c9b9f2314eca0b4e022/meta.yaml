@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/86c2977ffa174c9b9f2314eca0b4e022/artifacts
+end_time: 1711675576595
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 86c2977ffa174c9b9f2314eca0b4e022
+run_name: angry-tern-690
+run_uuid: 86c2977ffa174c9b9f2314eca0b4e022
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711675559027
+status: 3
+tags: []
+user_id: rowanzinn

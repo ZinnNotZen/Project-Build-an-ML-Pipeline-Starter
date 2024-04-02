@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/fa2a09f9dfc84ac2a3bd405877528c75/artifacts
+end_time: 1711937954584
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: fa2a09f9dfc84ac2a3bd405877528c75
+run_name: enthused-stag-369
+run_uuid: fa2a09f9dfc84ac2a3bd405877528c75
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711937915602
+status: 4
+tags: []
+user_id: rowanzinn

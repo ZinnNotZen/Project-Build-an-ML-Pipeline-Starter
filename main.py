@@ -98,7 +98,7 @@ def go(config: DictConfig):
 
             # Use trainval_data.csv:latest as trainval_artifact
             _ = mlflow.run(
-                os.path.join(hydra.utils.get_original_cwd(), "src", "modeling"),
+                os.path.join(hydra.utils.get_original_cwd(), "src", "train_random_forest"),
                 "main",
                 parameters={
                     "trainval_artifact": "trainval_data.csv:latest",

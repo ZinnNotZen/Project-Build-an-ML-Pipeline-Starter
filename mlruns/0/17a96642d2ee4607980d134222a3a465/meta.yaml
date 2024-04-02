@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/17a96642d2ee4607980d134222a3a465/artifacts
+end_time: 1711894521576
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 17a96642d2ee4607980d134222a3a465
+run_name: efficient-pug-319
+run_uuid: 17a96642d2ee4607980d134222a3a465
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711894506202
+status: 3
+tags: []
+user_id: rowanzinn

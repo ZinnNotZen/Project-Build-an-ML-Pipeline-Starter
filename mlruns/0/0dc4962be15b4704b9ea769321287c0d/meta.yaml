@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/0dc4962be15b4704b9ea769321287c0d/artifacts
+end_time: 1711937937707
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0dc4962be15b4704b9ea769321287c0d
+run_name: placid-grub-430
+run_uuid: 0dc4962be15b4704b9ea769321287c0d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711937923021
+status: 3
+tags: []
+user_id: rowanzinn

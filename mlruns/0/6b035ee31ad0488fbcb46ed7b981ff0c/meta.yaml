@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/6b035ee31ad0488fbcb46ed7b981ff0c/artifacts
+end_time: 1711675789502
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 6b035ee31ad0488fbcb46ed7b981ff0c
+run_name: tasteful-stag-24
+run_uuid: 6b035ee31ad0488fbcb46ed7b981ff0c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711675773192
+status: 3
+tags: []
+user_id: rowanzinn

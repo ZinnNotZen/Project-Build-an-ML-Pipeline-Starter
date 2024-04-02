@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/15396817586e4db58b3ba63f5f9d57ff/artifacts
+end_time: 1711894537697
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 15396817586e4db58b3ba63f5f9d57ff
+run_name: redolent-mare-148
+run_uuid: 15396817586e4db58b3ba63f5f9d57ff
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711894495339
+status: 4
+tags: []
+user_id: rowanzinn

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rowanzinn/Project-Build-an-ML-Pipeline-Starter/mlruns/0/8ebdac1a23b04956aefbf9e63d8a2786/artifacts
+end_time: 1711937774238
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8ebdac1a23b04956aefbf9e63d8a2786
+run_name: abrasive-kit-367
+run_uuid: 8ebdac1a23b04956aefbf9e63d8a2786
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711937756725
+status: 3
+tags: []
+user_id: rowanzinn
