@@ -1,154 +1,163 @@
 # Build an ML Pipeline for Short-Term Rental Prices in NYC
-You are working for a property management company renting rooms and properties for short periods of 
-time on various rental platforms. You need to estimate the typical price for a given property based 
-on the price of similar properties. Your company receives new data in bulk every week. The model needs 
-to be retrained with the same cadence, necessitating an end-to-end pipeline that can be reused.
 
-In this project you will build such a pipeline.
+An end-to-end, reusable machine learning pipeline that estimates fair short-term rental prices in NYC from listing data — built with MLflow, Hydra, and Weights & Biases so it can be re-run automatically as new data arrives.
 
-A link to my Wandb: https://wandb.ai/team_zinn/nyc_airbnb?nw=nwuserrzinndesigns
+> **Note:** This is a Udacity MLOps Nanodegree project ("Build an ML Pipeline for Short-Term Rental Prices in NYC," used to fulfill a WGU course requirement), built on top of the official Udacity starter kit. This repository is public because GitHub does not allow forks to be made private independently of their upstream repo — it is not intended as a "copy my homework" resource; if you're taking this course yourself, please do your own work.
+>
+> Live experiment tracking for this project is available on Weights & Biases: [team_zinn/nyc_airbnb](https://wandb.ai/team_zinn/nyc_airbnb?nw=nwuserrzinndesigns)
 
-## Table of contents
+---
 
-- [Preliminary steps](#preliminary-steps)
-  * [Fork the Starter Kit](#fork-the-starter-kit)
-  * [Create environment](#create-environment)
-  * [Get API key for Weights and Biases](#get-api-key-for-weights-and-biases)
-  * [The configuration](#the-configuration)
-  * [Running the entire pipeline or just a selection of steps](#Running-the-entire-pipeline-or-just-a-selection-of-steps)
-  * [Pre-existing components](#pre-existing-components)
+## Business Problem
 
-## Preliminary steps
-### Fork the Starter kit
-Go to [https://github.com/udacity/Project-Build-an-ML-Pipeline-Starter](https://github.com/udacity/Project-Build-an-ML-Pipeline-Starter)
-and click on `Fork` in the upper right corner. This will create a fork in your Github account, i.e., a copy of the
-repository that is under your control. Now clone the repository locally so you can start working on it:
+A property management company renting rooms and properties on short-term rental platforms needs to estimate a **fair market price** for a given property based on comparable listings. Because the company receives **new data in bulk every week**, a one-off price model trained manually isn't sufficient — pricing accuracy degrades as the market shifts, and retraining by hand doesn't scale.
 
+This project solves both problems at once: it builds a price-estimation model **and** wraps it in a fully reusable, parameterized pipeline that can be re-run end-to-end (or step-by-step) every time new data arrives — without manual intervention or hardcoded assumptions baked into the code.
+
+---
+
+## Dataset
+
+The pipeline ingests NYC short-term rental listing data (in the spirit of the well-known "NYC Airbnb" listings dataset), including fields such as listing price, room type, neighborhood, location (latitude/longitude), minimum nights, and review activity.
+
+**Obtaining the data:** data is **not** stored as a static file in this repo — it's pulled and versioned automatically by the pipeline's `download` step, then tracked as a Weights & Biases artifact at each stage of processing (raw → cleaned → split). This means every dataset version used in a given pipeline run is fully reproducible from the corresponding W&B artifact, rather than relying on a single CSV snapshot.
+
+---
+
+## Technologies Used
+
+- **Python**
+- **MLflow** — pipeline orchestration; each pipeline step (`download`, `basic_cleaning`, `data_check`, `train_val_test_split`, `train_random_forest`, `test_regression_model`) is its own MLflow project/component
+- **Hydra** — configuration management (`config.yaml`); all pipeline parameters are read from config rather than hardcoded, so the pipeline can be re-parameterized without code changes
+- **Weights & Biases (W&B)** — experiment tracking and data/artifact versioning across every pipeline step
+- **scikit-learn** — model training (Random Forest regression for price prediction)
+- **pandas** — data cleaning and transformation
+- **GitHub Actions** — CI (per `.github/workflows`)
+- **conda** — environment management (`environment.yml`, `conda.yml`)
+
+---
+
+## Architecture
+
+```mermaid
+flowchart LR
+    A["download<br/>(pull raw data,<br/>log as W&B artifact)"] --> B["basic_cleaning<br/>(filter price range,<br/>handle missing data)"]
+    B --> C["data_check<br/>(automated data<br/>quality tests)"]
+    C --> D["train_val_test_split<br/>(segregate data)"]
+    D --> E["train_random_forest<br/>(train model,<br/>log to W&B)"]
+    E --> F["test_regression_model<br/>(evaluate on<br/>held-out test set)"]
+
+    G[("config.yaml<br/>(Hydra config)")] -.parameters.-> A
+    G -.parameters.-> B
+    G -.parameters.-> C
+    G -.parameters.-> D
+    G -.parameters.-> E
+    G -.parameters.-> F
+
+    A -.artifacts.-> H[("Weights & Biases<br/>(experiment tracking +<br/>artifact versioning)")]
+    B -.artifacts.-> H
+    D -.artifacts.-> H
+    E -.artifacts.-> H
+    F -.metrics.-> H
 ```
-git clone https://github.com/[your github username]/Project-Build-an-ML-Pipeline-Starter.git
-```
 
-and go into the repository:
+**Pipeline summary:**
+1. **`download`** pulls the raw listing data and logs it as a versioned W&B artifact.
+2. **`basic_cleaning`** filters out-of-range prices and handles missing/invalid values, producing a cleaned dataset (also logged to W&B).
+3. **`data_check`** runs automated data quality tests against the cleaned data before it's allowed to proceed further in the pipeline — catching schema drift or unexpected values early.
+4. **`train_val_test_split`** segregates the cleaned data into training and test sets.
+5. **`train_random_forest`** trains a Random Forest regression model on the training data, with hyperparameters controlled entirely via `config.yaml` (e.g. `modeling.random_forest.n_estimators`), and logs the trained model and metrics to W&B.
+6. **`test_regression_model`** evaluates the final model against the held-out test set to report real-world expected performance.
 
-```
+Every step's parameters are pulled from `config.yaml` via Hydra rather than hardcoded — this is what makes the pipeline genuinely reusable for new data drops rather than a one-time script.
+
+---
+
+## Setup and Execution
+
+### Prerequisites
+- conda
+- A [Weights & Biases](https://wandb.ai) account and API key
+
+### Installation
+
+```bash
+git clone https://github.com/ZinnNotZen/Project-Build-an-ML-Pipeline-Starter.git
 cd Project-Build-an-ML-Pipeline-Starter
-```
-Commit and push to the repository often while you make progress towards the solution. Remember 
-to add meaningful commit messages.
 
-### Create environment
-Make sure to have conda installed and ready, then create a new environment using the ``environment.yaml``
-file provided in the root of the repository and activate it:
+conda env create -f environment.yml
+conda activate nyc_airbnb_dev
+```
+
+### W&B authentication
 
 ```bash
-> conda env create -f environment.yml
-> conda activate nyc_airbnb_dev
+wandb login [your API key]
 ```
 
-### Get API key for Weights and Biases
-Let's make sure we are logged in to Weights & Biases. Get your API key from W&B by going to 
-[https://wandb.ai/authorize](https://wandb.ai/authorize) and click on the + icon (copy to clipboard), 
-then paste your key into this command:
+### Configuration
 
+All pipeline parameters live in `config.yaml`, read via Hydra. No parameters are hardcoded in the pipeline steps — to change behavior (e.g., model hyperparameters, price filtering bounds), edit `config.yaml` or override via the command line (see below).
+
+### Running the pipeline
+
+Run the full pipeline:
 ```bash
-> wandb login [your API key]
+mlflow run .
 ```
 
-You should see a message similar to:
-```
-wandb: Appending key for api.wandb.ai to your netrc file: /home/[your username]/.netrc
-```
-
-
-### The configuration
-As usual, the parameters controlling the pipeline are defined in the ``config.yaml`` file defined in
-the root of the starter kit. We will use Hydra to manage this configuration file. 
-Open this file and get familiar with its content. Remember: this file is only read by the ``main.py`` script 
-(i.e., the pipeline) and its content is
-available with the ``go`` function in ``main.py`` as the ``config`` dictionary. For example,
-the name of the project is contained in the ``project_name`` key under the ``main`` section in
-the configuration file. It can be accessed from the ``go`` function as 
-``config["main"]["project_name"]``.
-
-NOTE: do NOT hardcode any parameter when writing the pipeline. All the parameters should be 
-accessed from the configuration file.
-
-### Running the entire pipeline or just a selection of steps
-In order to run the pipeline when you are developing, you need to be in the root of the starter kit, 
-then you can execute as usual:
-
+Run a single step (useful during development):
 ```bash
->  mlflow run .
+mlflow run . -P steps=download
 ```
-This will run the entire pipeline.
 
-When developing it is useful to be able to run one step at the time. Say you want to run only
-the ``download`` step. The `main.py` is written so that the steps are defined at the top of the file, in the 
-``_steps`` list, and can be selected by using the `steps` parameter on the command line:
-
+Run multiple specific steps:
 ```bash
-> mlflow run . -P steps=download
+mlflow run . -P steps=download,basic_cleaning
 ```
-If you want to run the ``download`` and the ``basic_cleaning`` steps, you can similarly do:
-```bash
-> mlflow run . -P steps=download,basic_cleaning
-```
-You can override any other parameter in the configuration file using the Hydra syntax, by
-providing it as a ``hydra_options`` parameter. For example, say that we want to set the parameter
-modeling -> random_forest -> n_estimators to 10 and etl->min_price to 50:
 
+Override configuration parameters at runtime via Hydra syntax:
 ```bash
-> mlflow run . \
+mlflow run . \
   -P steps=download,basic_cleaning \
   -P hydra_options="modeling.random_forest.n_estimators=10 etl.min_price=50"
 ```
 
-### Pre-existing components
-In order to simulate a real-world situation, we are providing you with some pre-implemented
-re-usable components. While you have a copy in your fork, you will be using them from the original
-repository by accessing them through their GitHub link, like:
+### Troubleshooting
 
-```python
-_ = mlflow.run(
-                f"{config['main']['components_repository']}/get_data",
-                "main",
-                parameters={
-                    "sample": config["etl"]["sample"],
-                    "artifact_name": "sample.csv",
-                    "artifact_type": "raw_data",
-                    "artifact_description": "Raw file as downloaded"
-                },
-            )
-```
-where `config['main']['components_repository']` is set to 
-[https://github.com/udacity/Project-Build-an-ML-Pipeline-Starter/tree/main/components](https://github.com/udacity/Project-Build-an-ML-Pipeline-Starter/tree/main/components).
-You can see the parameters that they require by looking into their `MLproject` file:
-
-- `get_data`: downloads the data. [MLproject](https://github.com/udacity/Project-Build-an-ML-Pipeline-Starter/blob/main/components/get_data/MLproject)
-- `train_val_test_split`: segrgate the data (splits the data) [MLproject](https://github.com/udacity/Project-Build-an-ML-Pipeline-Starter/blob/main/components/train_val_test_split/MLproject)
-
-## In case of errors
-When you make an error writing your `conda.yml` file, you might end up with an environment for the pipeline or one
-of the components that is corrupted. Most of the time `mlflow` realizes that and creates a new one every time you try
-to fix the problem. However, sometimes this does not happen, especially if the problem was in the `pip` dependencies.
-In that case, you might want to clean up all conda environments created by `mlflow` and try again. In order to do so,
-you can get a list of the environments you are about to remove by executing:
-
-```
-> conda info --envs | grep mlflow | cut -f1 -d" "
+If an `mlflow`-created conda environment becomes corrupted (most often from a `pip` dependency issue), list and clean up environments created by `mlflow`:
+```bash
+conda info --envs | grep mlflow | cut -f1 -d" "
+# Review the list, then remove them:
+for e in $(conda info --envs | grep mlflow | cut -f1 -d" "); do conda uninstall --name $e --all -y; done
 ```
 
-If you are ok with that list, execute this command to clean them up:
+---
 
-**_NOTE_**: this will remove *ALL* the environments with a name starting with `mlflow`. Use at your own risk
+## Sample Outputs
 
-```
-> for e in $(conda info --envs | grep mlflow | cut -f1 -d" "); do conda uninstall --name $e --all -y;done
-```
+All experiment runs, metrics, and artifact versions are tracked live on Weights & Biases: **[team_zinn/nyc_airbnb](https://wandb.ai/team_zinn/nyc_airbnb?nw=nwuserrzinndesigns)**
 
-This will iterate over all the environments created by `mlflow` and remove them.
+There you can review, for any given run:
+- Data quality check results from the `data_check` step
+- Random Forest hyperparameters and training metrics
+- Final model performance on the held-out test set
+- The full artifact lineage from raw download through to trained model
 
+---
 
-## License
+## Key Findings and Lessons Learned
 
-[License](LICENSE.txt)
+- **Reusability requires discipline, not just code.** The hardest part of this project wasn't training a Random Forest — it was resisting the urge to hardcode parameters during development. Routing every parameter through `config.yaml`/Hydra is what actually makes the pipeline reusable on the next data drop, rather than just a script that happened to work once.
+- **Automated data checks catch problems before they become model problems.** Running `data_check` as a discrete pipeline step (rather than skipping straight to training) means schema or data-quality issues surface immediately, with a clear stage to blame — instead of silently degrading model performance downstream.
+- **Artifact versioning makes "what data trained this model?" an answerable question.** Logging every intermediate dataset (raw, cleaned, split) to W&B as a versioned artifact means any past model run can be traced back to the exact data that produced it — essential for debugging a pipeline that's meant to run repeatedly on new data.
+- **Step-level execution sped up iteration significantly.** Being able to run `mlflow run . -P steps=download,basic_cleaning` instead of the entire pipeline made it possible to iterate quickly on a single step without waiting through the full download → train → test cycle every time.
+
+---
+
+## Possible Extensions
+
+- Add a model comparison step (e.g., Random Forest vs. Gradient Boosting) with automatic selection of the best-performing model based on test metrics
+- Add a scheduled trigger (e.g., GitHub Actions cron, or an orchestrator like Airflow/Prefect) so the pipeline genuinely runs automatically on the company's weekly data cadence, rather than being triggered manually
+- Build a lightweight API or dashboard on top of the trained model so non-technical stakeholders can query price estimates directly
+- Add drift detection comparing each new weekly data batch's distribution to the training data, to catch when retraining is actually warranted versus routine
